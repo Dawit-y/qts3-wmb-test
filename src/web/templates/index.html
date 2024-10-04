@@ -1,5 +1,23 @@
 {% extends "layout.html" %}
 
+{% block css %}
+
+input[type="submit"], a[role="button"] {
+background-color: #008CBA;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover, a[role="button"]:hover {
+background-color: #005f7f;
+}
+
+{% endblock %}
+
 {% block content %}
 
 <h1> Welcome to QuickStatements 3.0 </h1>
@@ -24,4 +42,3 @@
 </form>
 
 {% endblock %}
-
